@@ -1,0 +1,30 @@
+#banner1{
+	display: flex;
+    height: 100px;
+}
+.banner1-left{
+    width: 20%;
+    font-weight: bold;
+
+}
+.banner1-right{
+    width: 80%;
+}
+#banner2{
+    display: flex;
+    
+}
+#banner2-left{
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    border-width: 0 1px 0 0 ;
+    border-style: solid;
+}
+#main{
+
+    color: black;
+    display: inline-block;
+    width: 80%;
+}
+
