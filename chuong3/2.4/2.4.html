@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form table HOSO</title>
+    <script src="./2.4.js"></script>
+</head>
+
+<body>
+    <h1>Điền thông tin hồ sơ</h1>
+    <form id="questions" name="question">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" class="infor" /><br>
+        <br>
+
+        <label for="date">Ngày Sinh:</label>
+        <input type="date" id="date" class="infor" /><br>
+        <br>
+        <div>
+            <label for="html">Giới tính:</label>
+            <label for="nam">Nam</label>
+            <input type="radio" id="nam" value="nam" name="gender" checked>
+            <label for="nu">Nữ</label>
+            <input type="radio" id="nu" value="nữ" name="gender"> <br>
+        </div>
+        <br>
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" class="infor" /><br><br>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="text" id="phone" class="infor" /><br><br>
+        
+        <label for="toan">Toán:</label>
+        <input type="text" id="toan" class="score" /><br><br>
+
+        <label for="ly">Lý:</label>
+        <input type="text" id="ly" class="score" /><br><br>
+
+        <label for="hoa">Hóa:</label>
+        <input type="text" id="hoa" class="score" /><br><br>
+
+        <div style="display:flex ; flex-direction: row; ">
+            <button onclick="runClickHandler()">submit</button>
+            <button onclick="resetClickHandler()">reset</button>
+        </div>
+        
+    </form>
+    
+</body>
+
+</html>

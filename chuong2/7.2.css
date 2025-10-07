@@ -1,0 +1,51 @@
+
+#main{
+    color: black;
+    display: inline-block;
+    width: 90%;
+}
+#header{
+    display: flex;
+    margin: 2px;
+    background-color: gray;
+}
+.nav{
+    color: blue;
+    margin: auto;
+    display: inline-block;
+}
+.nav li{
+    display: inline-block;
+    position: relative;
+    text-transform:uppercase;
+    padding: 0 8px; 
+	
+}
+.nav a{
+	text-decoration: none;
+	font-weight: 800;
+}
+
+.head-left{
+    display: inline-block;
+    margin-left: 60px;
+}
+.head-left{
+    color: blue;
+
+}
+
+#content{
+    display: flex;
+}
+.content-left{
+    margin-left: 60px;
+    display: inline-block;
+    width: 400px;
+}
+.content-right{
+    margin-left:30px; 
+}
+.info{
+    display: flex;
+}

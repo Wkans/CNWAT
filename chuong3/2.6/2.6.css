@@ -1,0 +1,30 @@
+
+#tbl {
+  border: solid 1px #000;
+  width: 100%;
+  border-collapse: collapse;
+}
+#tbl th:first-child, td:first-child {
+  text-align: center;   
+  width: 50px;          
+}
+#tbl td,th {
+  border: solid 1px #000;
+  
+}
+#tbl thead {
+  background-color: #0d8bd3;
+}
+#tbl tbody tr:hover {
+    background-color: #90ee90;
+    cursor: pointer;
+}
+#tbl tr.oddr {
+  background-color: #a5a5a5;
+}
+#tbl tr.evenr {
+  background-color: #76f6eb;
+}
+#tbl tbody tr.selected {
+  background-color: yellow !important;
+}

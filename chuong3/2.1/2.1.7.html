@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function disp_prompt() {
+            var name = prompt("VUI LONG NHAP TEN CUA BAN", "Nguyen Khac Doanh");
+
+            if (name != null && name != "") {
+                document.write("XIN CHAO " +
+
+                    name + "!"+"<br>"+"How are you?");
+
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="disp_prompt()" value="Display a prompt box" />
+</body>
+
+</html>

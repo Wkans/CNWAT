@@ -1,0 +1,52 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+.controls {
+    margin-bottom: 20px;
+    display: flex;
+
+}
+.btn,
+.searchInput {
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+#productTable {
+    border-collapse: collapse;
+    width: 400px;
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+th {
+    background-color: gray;
+}
+
+th.sortable {
+    cursor: pointer;
+    position: relative;
+}
+
+th.sortable::after {
+    content: "";
+    position: absolute;
+    right: 8px;
+}
+
+th.sortable.sorted-asc::after {
+    content: "▲";
+}
+
+th.sortable.sorted-desc::after {
+    content: "▼";
+}

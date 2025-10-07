@@ -1,0 +1,44 @@
+
+#main {
+    margin: 0px auto;
+}
+
+#header {
+    display: flex;
+    background-color: rgb(13,152,199);
+}
+
+.summary {
+    margin: 40px;
+}
+
+#content {
+    display: flex;
+    padding: 5px 40px;
+    justify-content: space-between;
+    background-color: rgb(186, 209, 217);
+}
+.content ul{
+    padding-inline-start: 20px;
+}
+.content-left {
+    width: 60%;
+}
+.content-left h2 i{
+    margin-right: 10px;
+}
+.content-left ul{
+    list-style-type: none;
+}
+.content-right {
+    width: 30%;
+}
+.content-right h2 i{
+    margin-right: 10px;
+}
+.content-title{
+    color: blue;
+}
+.content-right ul{
+    list-style-type: none;
+}

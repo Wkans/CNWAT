@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./2.5.js"></script>
+    <link rel="stylesheet" href="./2.5.css">
+</head>
+
+<body>
+    <form id="form" name="form">
+        <div class="item">
+            <div class="titl">
+                <label for="name">Họ và tên:</label>
+            </div>
+            <div class="in">
+                <input onkeydown='handleEnter(event)' type="text" name="name" id="name" required autofocus onblur="validateName()">
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="titl">
+                <label for="add">Địa chỉ:</label>
+            </div>
+            <div class="in">
+                <input onkeydown='handleEnter(event)' type="text" name="add" id="add" required>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="titl">
+                <label for="sex">Giới tính:</label>
+            </div>
+            <div class="in">
+                <label for="nam">Nam</label>
+                <input type="radio" name="gender" id="nam" value="Nam" >
+
+                <label for="nu">Nữ</label>
+                <input type="radio" name="gender" id="nu" value="Nữ">
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="titl">
+                <label for="date">Ngày sinh:</label>
+            </div>
+            <div class="in">
+                <input onkeydown='handleEnter(event)' type="date" name="date" id="date" required>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="titl">
+                <label for="phone">Số điện thoại:</label>
+            </div>
+            <div class="in">
+                <input onkeydown='handleEnter(event)' type="text" name="phone" id="phone" required>
+            </div>
+        </div>
+        <div class="item">
+            <div class="titl">
+                <label for="email">Email:</label>
+            </div>
+            <div class="in">
+                <input onkeydown='handleEnter(event)' type="email" name="email" id="email" onblur='validateEmail()' required>
+                <span id="emailError" style="color: red; font-size: 12px; margin-left: 5px;"></span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="titl">
+                <label for="name">Khóa đăng kí:</label>
+            </div>
+            <div class="in">
+                <label for="course">ATTT</label>
+                <input onkeydown='handleEnter(event)' type="radio" name="course1" id="course1" value="ATTT" required>
+                <label for="course">CNTT</label>
+                <input onkeydown='handleEnter(event)' type="radio" name="course2" id="course2" value="CNTT" required>
+                <label for="course">DTVT</label>
+                <input onkeydown='handleEnter(event)' type="radio" name="course3" id="course3" value="DTVT" required>
+
+            </div>
+        </div>
+        <div class="item">
+            <div class="titl">
+                <label for="username">Tên sử dụng:</label>
+            </div>
+            <div class="in">
+                <input onkeydown='handleEnter(event)' type="text" name="username" id="username" required>
+            </div>
+        </div>
+        <div class="item">
+            <div class="titl">
+                <label for="password">Mật khẩu:</label>
+            </div>
+            <div class="in">
+                <input onkeydown='handleEnter(event)' type="password" name="password" id="password" required>
+            </div>
+        </div>
+        <div class="item">
+            <div class="titl">
+                <label for="confirmpassword">Gõ lại mật khẩu:</label>
+            </div>
+            <div class="in">
+                <input onkeydown='handleEnter(event)' onblur="handlePass()" type="password" name="confirmPassword" id="confirmPassword" required>
+                <span id="passError" style="color: red; font-size: 12px; margin-left: 5px;"></span>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="titl">
+                <label for="name">Ghi chú:</label>
+            </div>
+            <div class="in">
+                <textarea id="note" name="note"></textarea>
+            </div>
+        </div>
+        <div style="display:flex ; flex-direction: row; justify-content: center;  ">
+            <input type="button" name="c" value="Xác Nhận" onclick="chay()">
+            <input type="button" name="d" value="Reset" onclick="reset()">
+        </div>
+    </form>
+</body>
+
+</html>

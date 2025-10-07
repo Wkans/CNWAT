@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài thi trắc nghiệm</title>
+    <script src="./test2.js"></script>
+</head>
+
+<body>
+    <h1>Question for test2</h1>
+
+    <!-- Câu hỏi 1: chọn 1 đáp án -->
+    <div class="question">
+        <h3>Câu 1. Thủ đô của Việt Nam là gì?</h3>
+        <label><input type="radio" name="q1" value="Hà Nội"> Hà Nội</label><br>
+        <label><input type="radio" name="q1" value="TP.HCM"> TP.HCM</label><br>
+        <label><input type="radio" name="q1" value="Đà Nẵng"> Đà Nẵng</label>
+    </div>
+
+    <!-- Câu hỏi 2: chọn nhiều đáp án -->
+    <div class="question">
+        <h3>Câu 2. Ngôn ngữ lập trình nào sau đây là ngôn ngữ kịch bản (script)?</h3>
+        <label><input type="checkbox" name="q2" value="Python"> Python</label><br>
+        <label><input type="checkbox" name="q2" value="JavaScript"> JavaScript</label><br>
+        <label><input type="checkbox" name="q2" value="C++"> C++</label><br>
+        <label><input type="checkbox" name="q2" value="PHP"> PHP</label>
+    </div>
+
+    <!-- Câu hỏi 3: tự luận ngắn -->
+    <div class="question">
+        <h3>Câu 3. HTML viết tắt của từ gì?</h3>
+        <input type="text" id="q3" placeholder="Nhập câu trả lời của bạn...">
+    </div>
+
+    <button onclick="submitQuiz()">Nộp bài</button>
+
+    <div id="result"></div>
+</body>

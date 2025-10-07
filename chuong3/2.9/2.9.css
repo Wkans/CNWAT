@@ -1,0 +1,38 @@
+ul,
+li {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.caret {
+    cursor: pointer;
+    user-select: none;
+    /* ngăn chọn chữ khi bấm */
+}
+
+.caret::before {
+    content: "\25B6";
+    /* tam giác phải ► */
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.caret-down::before {
+    transform: rotate(90deg);
+    /* tam giác xuống ▼ */
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.selected {
+    background-color: #cce5ff;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
